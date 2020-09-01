@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Tournament Calculator</title>
+		
+	</head>
+	<body>
+		
+		<p>
+			Magic Limited Tournament Calculator
+		</p>
+		<form>
+			<fieldset>
+				<b>Number of Packs to Draft: </b><input name="playPacks" id="playPacks" size="1" type="text" value="3"><br>
+				<b>Number of Participants: </b><input name="playerCount" id="playerCount" size="1" type="text" value="6"><br>
+				<b>Cost of Entry per Participant: </b><input name="entryCost" id="entryCost" size="1" type="text" value="20"><br>
+				<b>Packs per Box: </b><input name="packsPerBox" id="packsPerBox" size="1" type="text" value="36"><br>
+				<b>Pitty packs: </b><input name="prizePittyPacks" id="prizePittyPacks" size="1" type="text" value="1"><br>
+				<b>First Prize: </b><input name="prizeFirst" id="prizeFirst" size="1" type="text" value="3"><br>
+				<b>Second Prize: </b><input name="prizeSecond" id="prizeSecond" size="1" type="text" value="2"><br>
+				<b>Third Prize: </b><input name="prizeThird" id="prizeThird" size="1" type="text" value="1"><br>
+				<b>Total Event Cost: </b><input name="totalCost" id="totalCost" size="1" type="text" value="120"><br>
+				<button type="button" onclick="t.update()">Update!</button>
+			</fieldset>
+		</form>
+		<p>
+			<form>
+				<b>Results:</b><br>
+				<b>Number of boxes required: </b><input name="boxes" id="boxes" size="1" type="text" value=""><br>
+				<b>Event Profit: </b><input name="profit" id="profit" size="1" type="text" value=""><br>
+				<b>Remaining Packs: </b><input name="remainingPacks" id="remainingPacks" size="1" type="text" value=""><br>
+				<b>Break Even Price for Remaining Packs: </b><input name="remaining" id="remaining" size="1" type="text" value=""><br>
+				<b>Deal for First Place: </b><input name="first" id="first" size="1" type="text" value=""><br>
+				<b>Deal for Second Place: </b><input name="second" id="second" size="1" type="text" value=""><br>
+				<b>Deal for Third Place: </b><input name="third" id="third" size="1" type="text" value=""><br>
+				<b>Deal for Pitty Packs only: </b><input name="last" id="last" size="1" type="text" value=""><br>
+			</form>
+		</p>
+		<script src="tourneyCalc.js"></script>
+	</body>
+</html>

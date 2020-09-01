@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="calculator.css" media="screen" />
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Tournament Calculator</title>
+		
+	</head>
+	<body>
+		
+		<p>
+			<div class="title">Magic Limited Tournament Calculator</div>
+		</p>
+		<div class="inputField">
+			<p>
+			<form>
+				<fieldset>
+					<legend><b>Event Information</b></legend>
+					<label class="inputField"> Number of Packs to Draft:  </label> 	<input name="playPacks" class="inputText" id="playPacks" size="10" type="text" value="3"><br>
+					<label class="inputField"> Number of Participants:  </label> 	<input name="playerCount" class="inputText" id="playerCount" size="10" type="text" value="6"><br>
+					<label class="inputField"> Cost of Entry per Participant:  </label> 	<input name="entryCost" class="inputText" id="entryCost" size="10" type="text" value="20"><br>
+					<label class="inputField"> Packs per Box:  </label> 	<input name="packsPerBox" class="inputText" id="packsPerBox" size="10" type="text" value="36"><br>
+					<label class="inputField"> Pitty packs:  </label> 	<input name="prizePittyPacks" class="inputText" id="prizePittyPacks" size="10" type="text" value="1"><br>
+					<label class="inputField"> First Prize:  </label> 	<input name="prizeFirst" class="inputText" id="prizeFirst" size="10" type="text" value="3"><br>
+					<label class="inputField"> Second Prize:  </label> 	<input name="prizeSecond" class="inputText" id="prizeSecond" size="10" type="text" value="2"><br>
+					<label class="inputField"> Third Prize:  </label> 	<input name="prizeThird" class="inputText" id="prizeThird" size="10" type="text" value="1"><br>
+					<label class="inputField"> Total Event Cost:  </label> 	<input name="totalCost" class="inputText" id="totalCost" size="10" type="text" value="120"><br>
+					
+				</fieldset>
+			</form>
+			</p>
+		</div>
+		<p>
+		<button type="button" onclick="t.update()">Calculate</button>
+		<p>
+		<div class ="outputField">
+			<p>
+				<form>
+					<fieldset>
+						<legend><b>Results</b></legend>
+						<label class="outputField">Number of boxes required: </label><input name="boxes" id="boxes" size="10" type="text" value=""><br>
+						<label class="outputField">Event Profit: </label><input name="profit" id="profit" size="10" type="text" value=""><br>
+						<label class="outputField">Remaining Packs: </label><input name="remainingPacks" id="remainingPacks" size="10" type="text" value=""><br>
+						<label class="outputField">Break Even Price for Remaining Packs: </label><input name="remaining" id="remaining" size="10" type="text" value=""><br>
+						<label class="outputField">Deal for First Place: </label><input name="first" id="first" size="10" type="text" value=""><br>
+						<label class="outputField">Deal for Second Place: </label><input name="second" id="second" size="10" type="text" value=""><br>
+						<label class="outputField">Deal for Third Place: </label><input name="third" id="third" size="10" type="text" value=""><br>
+						<label class="outputField">Deal for Pitty Packs only: </label><input name="last" id="last" size="10" type="text" value=""><br>
+					</fieldset>
+				</form>
+			</p>
+		</div>
+		<script src="tourneyCalc.js"></script>
+	</body>
+</html>

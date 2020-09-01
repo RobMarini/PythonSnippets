@@ -1,0 +1,28 @@
+div.title{
+	border: solid black thin;
+	font-size: 28px;
+	font-weight: bold;
+}
+div.inputField{
+	border: solid blue thick;
+}
+div.outputField{
+	border: solid red thick;
+}
+legend{
+	font-size: 24px;
+}
+input.inputText{
+}
+label.inputField{
+	text-align: left;
+	width: 250px;
+	float: left;
+	font-weight: bold;
+}
+label.outputField{
+	text-align: left;
+	width: 300px;
+	float: left;
+	font-weight: bold;
+}
