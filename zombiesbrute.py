@@ -7,6 +7,7 @@ import random
 random.seed()
 
 def duel():
+	#coin flip
 	return random.randint(0,1) == 0
 
 def fight(zombies, humans):
@@ -18,7 +19,8 @@ def fight(zombies, humans):
 			zombies = zombies +1
 	if humans > 0:
 		return 1
-	return 0
+	else:
+		return 0
 
 def runTrials(numTrials):
 	for zombies in range(1,100):
@@ -26,8 +28,8 @@ def runTrials(numTrials):
 			humanVictories = 0
 			for trials in range(1,numTrials):
 				humanVictories = humanVictories + fight(zombies,humans)
-			wins = humanVictories/numTrials
-			if wins >= .48 and wins <= .52:
-				print(str(humans) + " humans v. " + str(zombies) + " zombies " "win percentage " + str(wins*100))
+			winPercentage = humanVictories/numTrials
+			if winPercentage >= .48 and winPercentage <= .52:
+				print(str(humans) + " humans v. " + str(zombies) + " zombies " "win percentage " + str(winPercentage*100))
 
 runTrials(100)
